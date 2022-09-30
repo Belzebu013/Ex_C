@@ -1,0 +1,51 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#define size 6
+
+
+/*2) Faça um programa que possua um vetor denominado A que armazene 6 números .
+ O programa deve executar os seguintes passos:
+ (a) Atribua os seguintes valores a esse vetor: 1, 0, 5, -2, -5, 7.
+(b) Armazene em uma variável inteira (simples) a soma entre os valores das posições A[0], A[1] e A[5] do vetor e mostre na tela esta soma.
+ (c) Modifique o vetor na posição 4, atribuindo a esta posição o valor 100. 
+ (d) Mostre na tela cada valor do vetor A, um em cada linha.*/
+ 
+ int main(){
+    int A[size], i, pos1, pos2, pos3, soma;
+     
+    for(i=0; i<size; i++){
+        printf("Digite o %dº valor: ", i+1);
+        scanf("%d", &A[i]);
+        //Item A - Vetor criado e atribuido os valores: 1, 0, 5, -2, -5, 7.
+     }
+     
+     //Item B - Armazenar os valores das posicoes 0, 1 e 5 nas variaveis pos1, pos2 e pos3.
+     for(i=0; i<size; i++){
+         if(i==0){
+             pos1 = A[i];
+         }else{
+             if(i==1){
+                 pos2 = A[i];
+             }else{
+                 if(i==5){
+                     pos3 = A[i];
+                 }
+             }
+         }
+    //Item B - Armazenar a soma em uma variavel e exibi-la.
+    soma = pos1 + pos2 + pos3;
+     }
+    printf("A soma de A[0] + A[1] + A[5] = %d", soma);
+    printf("\n");
+    
+    //Item C - Modificar a posicao A[4] para o valor 100.
+    for(i=0; i<size; i++){
+        if(i==4){
+            A[i] = 100;
+        }
+    //Item D - Apresentar o valor de cada item do array.
+    printf("\nA[%d] = %d", i, A[i]);
+    }
+    
+ }
