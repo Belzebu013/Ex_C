@@ -2,7 +2,7 @@
 //1) Faça um programa que leia um vetor de 10 posicões e verifique se existem valores iguais e os escreva na tela.
 
 #include <stdio.h>
-#define size 5
+#define size 10
 #include <stdlib.h>
 
 int main(){
